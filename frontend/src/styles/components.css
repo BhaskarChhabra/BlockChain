@@ -1,0 +1,629 @@
+/* ============================================================
+   BRAND
+============================================================ */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 34px;
+}
+
+.brand-mark {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    font-size: 24px;
+    font-weight: 900;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5267ff,
+            #1bc8ff
+        );
+
+    box-shadow:
+        0 0 30px rgba(77, 119, 255, 0.25);
+}
+
+.brand-name {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.brand-subtitle {
+    margin-top: 4px;
+
+    color: #667184;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* ============================================================
+   NETWORK
+============================================================ */
+
+.network-card {
+    padding: 18px;
+
+    border: 1px solid #202b36;
+    border-radius: 16px;
+
+    background: rgba(11, 16, 22, 0.78);
+
+    margin-bottom: 29px;
+}
+
+.network-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #aeb9c8;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.network-details {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 14px;
+
+    color: #657184;
+
+    font-size: 11px;
+    font-family: monospace;
+}
+
+
+/* ============================================================
+   STATUS
+============================================================ */
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+}
+
+.status-dot.active {
+    background: #48e6aa;
+
+    box-shadow:
+        0 0 10px rgba(72, 230, 170, 0.75);
+}
+
+
+/* ============================================================
+   SIDEBAR NAV
+============================================================ */
+
+.sidebar-nav {
+    flex: 1;
+}
+
+.nav-group {
+    margin-bottom: 28px;
+}
+
+.nav-group-title {
+    padding: 0 15px;
+    margin-bottom: 10px;
+
+    color: #485366;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 13px 15px;
+    margin-bottom: 4px;
+
+    color: #7e8a9d;
+    background: transparent;
+
+    border: 1px solid transparent;
+    border-radius: 11px;
+
+    text-align: left;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border 0.2s ease;
+}
+
+.nav-item:hover {
+    color: #d9e0ea;
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.nav-item.selected {
+    color: #f4f7ff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(83, 94, 255, 0.21),
+            rgba(39, 75, 130, 0.08)
+        );
+
+    border-color: rgba(91, 106, 255, 0.35);
+
+    box-shadow:
+        inset 3px 0 0 #6573ff;
+}
+
+.nav-icon {
+    width: 18px;
+
+    color: #7181ff;
+
+    font-size: 17px;
+    text-align: center;
+}
+
+.nav-live {
+    margin-left: auto;
+
+    color: #4ee5aa;
+
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
+/* ============================================================
+   SIDEBAR BOTTOM
+============================================================ */
+
+.sidebar-bottom {
+    margin-top: 20px;
+}
+
+.security-indicator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    border: 1px solid rgba(66, 195, 143, 0.18);
+    border-radius: 14px;
+
+    background: rgba(29, 101, 74, 0.08);
+}
+
+.security-icon {
+    width: 27px;
+    height: 27px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid #48e6aa;
+    border-radius: 50%;
+
+    color: #48e6aa;
+}
+
+.security-indicator strong {
+    display: block;
+
+    color: #57e9b0;
+
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.security-indicator span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #586778;
+
+    font-size: 9px;
+}
+
+.version {
+    margin-top: 20px;
+
+    color: #394454;
+
+    font-size: 8px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/* ============================================================
+   TOPBAR
+============================================================ */
+
+.chain-pill {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 9px 12px;
+
+    color: #8390a2;
+
+    border: 1px solid #222d39;
+    border-radius: 9px;
+
+    background: #0a0f15;
+
+    font-size: 10px;
+    font-family: monospace;
+}
+
+.chain-pill strong {
+    color: #5260ff;
+
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.wallet-button,
+.primary-button,
+.secondary-button,
+.icon-button {
+    border-radius: 10px;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.wallet-button:hover,
+.primary-button:hover:not(:disabled),
+.secondary-button:hover:not(:disabled),
+.icon-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.wallet-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 14px;
+
+    color: #e8ecf4;
+
+    background: #101721;
+
+    border: 1px solid #293443;
+}
+
+.wallet-button span {
+    color: #6575ff;
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.primary-button {
+    padding: 12px 17px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4d5eff,
+            #3455d7
+        );
+
+    border: 1px solid #6876ff;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 7px 24px rgba(62, 86, 255, 0.18);
+}
+
+.secondary-button {
+    padding: 11px 15px;
+
+    color: #aeb8c7;
+
+    background: #0b1118;
+
+    border: 1px solid #27313e;
+
+    font-weight: 700;
+}
+
+.secondary-button:hover:not(:disabled) {
+    color: #edf2f7;
+    border-color: #46566c;
+}
+
+.icon-button {
+    width: 43px;
+    height: 43px;
+
+    color: #8895a8;
+
+    background: #0b1118;
+
+    border: 1px solid #27313e;
+}
+
+button:disabled {
+    opacity: 0.4;
+}
+
+
+/* ============================================================
+   PANELS
+============================================================ */
+
+.panel {
+    overflow: hidden;
+
+    border: 1px solid #202a35;
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10, 15, 21, 0.96),
+            rgba(7, 11, 16, 0.96)
+        );
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 22px 24px;
+
+    border-bottom: 1px solid #1c2530;
+}
+
+.panel-header h3 {
+    margin: 0;
+
+    color: #e5eaf2;
+
+    font-size: 16px;
+}
+
+.panel-header span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #687588;
+
+    font-size: 11px;
+}
+
+
+/* ============================================================
+   ALERT
+============================================================ */
+
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 13px 18px;
+
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+
+    font-size: 11px;
+}
+
+.alert-error {
+    color: #e4a6af;
+
+    background: rgba(100, 25, 39, 0.12);
+
+    border: 1px solid rgba(218, 85, 104, 0.45);
+}
+
+.alert-error strong {
+    color: #f0dce0;
+}
+
+
+/* ============================================================
+   LABELS
+============================================================ */
+
+.section-label {
+    display: block;
+
+    color: #6976ff;
+
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1.7px;
+}
+
+
+/* ============================================================
+   STAT CARDS
+============================================================ */
+
+.stat-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid #202a35;
+    border-radius: 15px;
+
+    background: rgba(10, 15, 21, 0.9);
+}
+
+.stat-icon {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    color: #6976ff;
+
+    border: 1px solid #29344a;
+    border-radius: 11px;
+
+    background: rgba(72, 83, 180, 0.08);
+}
+
+.stat-body span {
+    display: block;
+
+    color: #677386;
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.stat-body strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #e8edf5;
+
+    font-size: 18px;
+}
+
+.stat-body small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #4d5969;
+
+    font-size: 9px;
+}
+
+
+/* ============================================================
+   MODULE LAUNCHER
+============================================================ */
+
+.module-launcher {
+    display: grid;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    padding: 22px;
+}
+
+.module-launcher button {
+    padding: 19px;
+
+    text-align: left;
+
+    border: 1px solid #222d39;
+    border-radius: 13px;
+
+    color: #cdd5df;
+
+    background: #090e14;
+
+    transition:
+        border 0.2s ease,
+        background 0.2s ease;
+}
+
+.module-launcher button:hover {
+    border-color: #3c4c68;
+    background: #0d141c;
+}
+
+.module-launcher strong {
+    display: block;
+}
+
+.module-launcher span {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #5e6a7b;
+
+    font-size: 10px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 1050px) {
+    .stat-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .stat-grid,
+    .module-launcher {
+        grid-template-columns: 1fr;
+    }
+}
