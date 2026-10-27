@@ -1,0 +1,14 @@
+import { defineConfig } from "hardhat/config";
+import hardhatEthers from "@nomicfoundation/hardhat-ethers";
+
+export default defineConfig({
+  plugins: [hardhatEthers],
+
+  paths: {
+    sources: "./contracts",
+  },
+
+  solidity: {
+    version: "0.8.34",
+  },
+});
