@@ -16,6 +16,7 @@ contract AuthRegistry {
 
     struct RSU {
         string id;
+        address rsuAddress;
         string location;
         bool active;
         uint256 registeredAt;
@@ -40,15 +41,17 @@ contract AuthRegistry {
     address public admin;
 
     mapping(address => User) public users;
+    address[] private userAddresses;
 
     mapping(address => Handover) public lastHandover;
 
-    mapping(address => Authentication)
-        public lastAuthentication;
+    mapping(address => Authentication) public lastAuthentication;
 
     mapping(string => RSU) private rsus;
-
     string[] private rsuIds;
+
+    uint256 public totalAuthentications;
+    uint256 public totalHandovers;
 
     // ============================================================
     // EVENTS
@@ -67,6 +70,7 @@ contract AuthRegistry {
 
     event RSURegistered(
         string indexed rsuId,
+        address indexed rsuAddress,
         string location,
         uint256 timestamp
     );
@@ -117,11 +121,14 @@ contract AuthRegistry {
         address _user,
         bytes32 _publicKeyHash
     ) external onlyAdmin {
-
         require(
             _user != address(0),
             "Invalid user address"
         );
+
+        if (!users[_user].registered) {
+            userAddresses.push(_user);
+        }
 
         users[_user] = User({
             publicKeyHash: _publicKeyHash,
@@ -144,10 +151,14 @@ contract AuthRegistry {
     function revokeUser(
         address _user
     ) external onlyAdmin {
-
         require(
             users[_user].registered,
             "User not registered"
+        );
+
+        require(
+            !users[_user].revoked,
+            "User is already revoked"
         );
 
         users[_user].revoked = true;
@@ -165,7 +176,6 @@ contract AuthRegistry {
     function isAuthenticated(
         address _user
     ) public view returns (bool) {
-
         return
             users[_user].registered &&
             !users[_user].revoked;
@@ -179,7 +189,6 @@ contract AuthRegistry {
         address _user,
         string memory _rsuId
     ) external onlyAdmin {
-
         require(
             users[_user].registered,
             "User not registered"
@@ -202,6 +211,8 @@ contract AuthRegistry {
                 successful: true
             });
 
+        totalAuthentications++;
+
         emit AuthenticationRecorded(
             _user,
             _rsuId,
@@ -217,7 +228,6 @@ contract AuthRegistry {
         address _user,
         string memory _rsuId
     ) external onlyAdmin {
-
         require(
             users[_user].registered,
             "User not registered"
@@ -240,6 +250,8 @@ contract AuthRegistry {
                 successful: true
             });
 
+        totalHandovers++;
+
         emit HandoverRecorded(
             _user,
             _rsuId,
@@ -253,21 +265,27 @@ contract AuthRegistry {
 
     function registerRSU(
         string memory _rsuId,
+        address _rsuAddress,
         string memory _location
     ) external onlyAdmin {
-
         require(
             bytes(_rsuId).length > 0,
             "RSU ID required"
         );
 
         require(
-            !rsus[_rsuId].active,
+            bytes(rsus[_rsuId].id).length == 0,
             "RSU already exists"
+        );
+
+        require(
+            _rsuAddress != address(0),
+            "Invalid RSU address"
         );
 
         rsus[_rsuId] = RSU({
             id: _rsuId,
+            rsuAddress: _rsuAddress,
             location: _location,
             active: true,
             registeredAt: block.timestamp
@@ -277,6 +295,7 @@ contract AuthRegistry {
 
         emit RSURegistered(
             _rsuId,
+            _rsuAddress,
             _location,
             block.timestamp
         );
@@ -290,7 +309,6 @@ contract AuthRegistry {
         string memory _rsuId,
         bool _active
     ) external onlyAdmin {
-
         require(
             bytes(rsus[_rsuId].id).length > 0,
             "RSU not found"
@@ -316,6 +334,7 @@ contract AuthRegistry {
         view
         returns (
             string memory,
+            address,
             string memory,
             bool,
             uint256
@@ -325,6 +344,7 @@ contract AuthRegistry {
 
         return (
             rsu.id,
+            rsu.rsuAddress,
             rsu.location,
             rsu.active,
             rsu.registeredAt
@@ -375,6 +395,48 @@ contract AuthRegistry {
             user.registered,
             user.revoked,
             user.registeredAt
+        );
+    }
+
+    // ============================================================
+    // GET USER ADDRESSES
+    // ============================================================
+
+    function getUserAddresses()
+        external
+        view
+        returns (address[] memory)
+    {
+        return userAddresses;
+    }
+
+    function getUserCount()
+        external
+        view
+        returns (uint256)
+    {
+        return userAddresses.length;
+    }
+
+    // ============================================================
+    // STATS
+    // ============================================================
+
+    function getStats()
+        external
+        view
+        returns (
+            uint256 totalVehicles,
+            uint256 totalRSUs,
+            uint256 authCount,
+            uint256 handoverCount
+        )
+    {
+        return (
+            userAddresses.length,
+            rsuIds.length,
+            totalAuthentications,
+            totalHandovers
         );
     }
 

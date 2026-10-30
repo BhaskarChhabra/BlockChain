@@ -1,0 +1,13 @@
+{
+  "names": {
+    "0x04ef5304c941d7328baddaea87903f31f4572c5d": "Vehicle-1",
+    "0xcfa7198db9cc2112dddaea584e91d748b42e7bd4": "Vehicle-2",
+    "0x810f324bf261a4d3ff594fb650585b1a3fa03ac9": "V1"
+  },
+  "metadata": {
+    "0x04ef5304c941d7328baddaea87903f31f4572c5d": {
+      "deactivatedAt": 1793376792180,
+      "reason": "Administrative Deactivation"
+    }
+  }
+}

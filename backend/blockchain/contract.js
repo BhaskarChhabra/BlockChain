@@ -6,12 +6,20 @@ dotenv.config({
     path: path.join(__dirname, "../.env"),
 });
 
-const artifact = require(
-    path.join(
-        __dirname,
-        "../../blockchain/artifacts/contracts/AuthRegistry.sol/AuthRegistry.json"
-    )
+const artifactPath = path.join(
+    __dirname,
+    "../../blockchain/artifacts/contracts/AuthRegistry.sol/AuthRegistry.json"
 );
+
+const fs = require("fs");
+if (!fs.existsSync(artifactPath)) {
+    throw new Error(
+        "Contract artifact AuthRegistry.json not found at " + artifactPath +
+        ". Please compile the smart contract first: run 'npx hardhat compile' in the blockchain directory."
+    );
+}
+
+const artifact = require(artifactPath);
 
 const RPC_URL = process.env.BLOCKCHAIN_RPC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY?.trim();
@@ -20,19 +28,19 @@ const CONTRACT_ADDRESS =
 
 if (!RPC_URL) {
     throw new Error(
-        "BLOCKCHAIN_RPC_URL is missing from .env"
+        "BLOCKCHAIN_RPC_URL is missing from .env. Please copy backend/.env.example to backend/.env and configure it."
     );
 }
 
 if (!PRIVATE_KEY) {
     throw new Error(
-        "PRIVATE_KEY is missing from .env"
+        "PRIVATE_KEY is missing from .env. Please copy backend/.env.example to backend/.env and configure it."
     );
 }
 
 if (!CONTRACT_ADDRESS) {
     throw new Error(
-        "CONTRACT_ADDRESS is missing from .env"
+        "CONTRACT_ADDRESS is missing from .env. Please copy backend/.env.example to backend/.env and set the deployed contract address."
     );
 }
 
@@ -56,6 +64,15 @@ const wallet =
         PRIVATE_KEY,
         provider
     );
+
+// Fetch live nonce from provider to avoid stale local cache during rapid sequential transactions
+wallet.getNonce = async function (blockTag = "pending") {
+    const hex = await provider.send(
+        "eth_getTransactionCount",
+        [this.address, blockTag]
+    );
+    return parseInt(hex, 16);
+};
 
 const contract =
     new ethers.Contract(

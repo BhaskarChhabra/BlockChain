@@ -17,14 +17,14 @@
 }
 
 .sidebar {
-    width: 334px;
+    width: 260px;
     min-height: 100vh;
     flex-shrink: 0;
 
     display: flex;
     flex-direction: column;
 
-    padding: 30px 24px 22px;
+    padding: 24px 18px 20px;
 
     background:
         linear-gradient(
@@ -43,29 +43,33 @@
 .main {
     min-width: 0;
     flex: 1;
+    margin-left: 0 !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-wrapper {
     width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 34px 52px 70px;
+    margin: 0;
+    padding: 24px 32px 50px;
+    box-sizing: border-box;
 }
 
 .topbar {
-    min-height: 112px;
+    min-height: 78px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 
-    padding: 25px 52px;
+    padding: 16px 36px;
 
     border-bottom: 1px solid rgba(35, 43, 54, 0.75);
 
     background:
-        rgba(5, 7, 11, 0.78);
+        rgba(5, 7, 11, 0.85);
 
     backdrop-filter: blur(18px);
 
@@ -75,23 +79,23 @@
 }
 
 .topbar h1 {
-    margin: 7px 0 0;
+    margin: 4px 0 0;
 
-    font-size: 27px;
+    font-size: 22px;
     line-height: 1.1;
-    letter-spacing: -0.7px;
+    letter-spacing: -0.5px;
 }
 
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 8px;
 
     color: #6f7b8e;
 
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
@@ -107,15 +111,16 @@
 
 @media (max-width: 1050px) {
     .sidebar {
-        width: 245px;
+        width: 220px;
+        padding: 20px 14px;
     }
 
     .page-wrapper {
-        padding: 30px;
+        padding: 20px 24px 40px;
     }
 
     .topbar {
-        padding: 24px 30px;
+        padding: 14px 24px;
     }
 }
 
@@ -126,11 +131,11 @@
 
     .topbar {
         position: relative;
-        padding: 22px;
+        padding: 18px;
     }
 
     .page-wrapper {
-        padding: 22px;
+        padding: 18px;
     }
 }
 
@@ -143,4 +148,17 @@
     .topbar-actions {
         width: 100%;
     }
+}
+
+.registry-table.compact-table {
+    min-width: 100% !important;
+}
+
+
+.page-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

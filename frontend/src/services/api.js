@@ -8,11 +8,8 @@ async function request(
         `${API_BASE_URL}${endpoint}`,
         {
             ...options,
-
             headers: {
-                "Content-Type":
-                    "application/json",
-
+                "Content-Type": "application/json",
                 ...(options.headers || {}),
             },
         }
@@ -27,25 +24,30 @@ async function request(
     }
 
     if (!response.ok) {
-        throw new Error(
+        const error = new Error(
             data.error ||
             data.message ||
             `Request failed (${response.status})`
         );
+        error.status = response.status;
+        error.data = data;
+        throw error;
     }
 
     return data;
 }
 
-
 // ============================================================
-// BLOCKCHAIN
+// DASHBOARD & BLOCKCHAIN
 // ============================================================
 
 export function getBlockchainStatus() {
     return request("/blockchain");
 }
 
+export function getDashboardStats() {
+    return request("/stats");
+}
 
 // ============================================================
 // VEHICLES
@@ -55,31 +57,65 @@ export function getVehicles() {
     return request("/vehicles");
 }
 
-export function getVehicle(
-    address
-) {
-    return request(
-        `/vehicle/${address}`
-    );
+export function getVehicle(address) {
+    return request(`/vehicle/${address}`);
 }
 
 export function registerVehicle(
     vehicleAddress,
-    publicKeyHash
+    publicKeyHash,
+    vehicleName = ""
 ) {
     return request(
         "/register",
         {
             method: "POST",
-
             body: JSON.stringify({
                 vehicleAddress,
                 publicKeyHash,
+                vehicleName,
             }),
         }
     );
 }
 
+export function revokeVehicle(vehicleAddress) {
+    return request(
+        "/revoke",
+        {
+            method: "POST",
+            body: JSON.stringify({
+                vehicleAddress,
+            }),
+        }
+    );
+}
+
+export function deactivateVehicle(vehicleAddress, reason = "Administrative Deactivation") {
+    return request(
+        "/deactivate",
+        {
+            method: "POST",
+            body: JSON.stringify({
+                vehicleAddress,
+                reason,
+            }),
+        }
+    );
+}
+
+export function updateVehicleName(vehicleAddress, name) {
+    return request(
+        "/vehicle/name",
+        {
+            method: "POST",
+            body: JSON.stringify({
+                vehicleAddress,
+                name,
+            }),
+        }
+    );
+}
 
 // ============================================================
 // RSUs
@@ -91,24 +127,41 @@ export function getRSUs() {
 
 export function registerRSU(
     rsuId,
-    location
+    location,
+    rsuAddress
 ) {
     return request(
         "/rsus",
         {
             method: "POST",
-
             body: JSON.stringify({
                 rsuId,
                 location,
+                rsuAddress,
             }),
         }
     );
 }
 
+export function setRSUStatus(rsuId, active) {
+    return request(
+        "/rsus/status",
+        {
+            method: "POST",
+            body: JSON.stringify({
+                rsuId,
+                active,
+            }),
+        }
+    );
+}
+
+export function deactivateRSU(rsuId) {
+    return setRSUStatus(rsuId, false);
+}
 
 // ============================================================
-// AUTHENTICATION
+// MUTUAL AUTHENTICATION
 // ============================================================
 
 export function createChallenge(
@@ -119,7 +172,6 @@ export function createChallenge(
         "/authenticate/challenge",
         {
             method: "POST",
-
             body: JSON.stringify({
                 vehicleAddress,
                 rsuId,
@@ -136,7 +188,6 @@ export function verifyAuthentication(
         "/authenticate/verify",
         {
             method: "POST",
-
             body: JSON.stringify({
                 vehicleAddress,
                 signature,
@@ -153,23 +204,27 @@ export function getLastAuthentication(
     );
 }
 
-
 // ============================================================
 // HANDOVER
 // ============================================================
 
 export function executeHandover(
     vehicleAddress,
-    rsuId
+    currentRsuId,
+    targetRsuId,
+    signature,
+    message
 ) {
     return request(
         "/handover",
         {
             method: "POST",
-
             body: JSON.stringify({
                 vehicleAddress,
-                rsuId,
+                currentRsuId,
+                targetRsuId,
+                signature,
+                message,
             }),
         }
     );
@@ -183,6 +238,40 @@ export function getLastHandover(
     );
 }
 
+export function getHandoverHistory() {
+    return request("/handovers");
+}
+
+
+// ============================================================
+// PERFORMANCE & BENCHMARKING
+// ============================================================
+
+export function getPerformanceSummary() {
+    return request("/performance/summary");
+}
+
+export function getPerformanceHistory(params = {}) {
+    const qs = new URLSearchParams();
+    if (params.operation) qs.append("operation", params.operation);
+    if (params.status) qs.append("status", params.status);
+    if (params.limit) qs.append("limit", params.limit);
+    const query = qs.toString() ? `?${qs.toString()}` : "";
+    return request(`/performance/history${query}`);
+}
+
+export function recordPerformanceMetric(record) {
+    return request("/performance/record", {
+        method: "POST",
+        body: JSON.stringify(record),
+    });
+}
+
+export function clearPerformanceHistory() {
+    return request("/performance/history", {
+        method: "DELETE",
+    });
+}
 
 export {
     API_BASE_URL,

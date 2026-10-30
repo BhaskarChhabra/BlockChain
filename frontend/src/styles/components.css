@@ -627,3 +627,113 @@ button:disabled {
         grid-template-columns: 1fr;
     }
 }
+/* ============================================================
+   DARK THEME SELECT & DROPDOWN OPTIONS
+============================================================ */
+
+select,
+.dark-dropdown {
+    background-color: #0b1118 !important;
+    color: #edf2f7 !important;
+    border: 1px solid #293440 !important;
+    border-radius: 8px;
+    padding: 10px 14px;
+    outline: none;
+    font-size: 13px;
+    font-family: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+select:focus,
+.dark-dropdown:focus {
+    border-color: #5267ff !important;
+    box-shadow: 0 0 0 2px rgba(82, 103, 255, 0.25) !important;
+}
+
+select:hover:not(:disabled),
+.dark-dropdown:hover:not(:disabled) {
+    border-color: #3d4c5d !important;
+}
+
+select:disabled,
+.dark-dropdown:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+select option,
+.dark-dropdown option {
+    background-color: #0b1118 !important;
+    color: #edf2f7 !important;
+    padding: 8px 12px;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+    background-color: #172332 !important;
+    color: #ffffff !important;
+}
+
+/* ============================================================
+   CONFIRMATION MODAL
+============================================================ */
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    display: grid;
+    place-items: center;
+    z-index: 999;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #090e15;
+    border: 1px solid #293442;
+    border-radius: 12px;
+    max-width: 480px;
+    width: 100%;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    animation: modalIn 0.18s ease-out;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96) translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.modal-body {
+    font-size: 13px;
+    color: #a0aec0;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}

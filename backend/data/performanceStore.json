@@ -1,0 +1,1068 @@
+{
+  "records": [
+    {
+      "id": "BENCH-1793380476822-5",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 84,
+        "rsuVerifyMs": 2,
+        "vehicleSignMs": 1,
+        "backendVerifyMs": 212,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 197,
+        "apiLatencyMs": 296,
+        "totalLatencyMs": 299
+      },
+      "blockchain": {
+        "txHash": "0xbe6f8d1e3adc36b69b3c8757fdacbc7e0987748777572323a0f51ead6e70b7e9",
+        "blockNumber": 11,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380476846
+    },
+    {
+      "id": "PERF-1793380476799-306",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 122,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 62,
+        "apiLatencyMs": 184,
+        "totalLatencyMs": 184
+      },
+      "blockchain": {
+        "txHash": "0xbe6f8d1e3adc36b69b3c8757fdacbc7e0987748777572323a0f51ead6e70b7e9",
+        "blockNumber": 11,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380476799
+    },
+    {
+      "id": "BENCH-1793380476490-4",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 69,
+        "rsuVerifyMs": 4,
+        "vehicleSignMs": 1,
+        "backendVerifyMs": 211,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 196,
+        "apiLatencyMs": 280,
+        "totalLatencyMs": 286
+      },
+      "blockchain": {
+        "txHash": "0xfc19acccac50806bc3b576d0fed71a9daf0bbfe63441389e0870d19d1fe63d9a",
+        "blockNumber": 10,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380476512
+    },
+    {
+      "id": "PERF-1793380476472-918",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 129,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 59,
+        "apiLatencyMs": 188,
+        "totalLatencyMs": 188
+      },
+      "blockchain": {
+        "txHash": "0xfc19acccac50806bc3b576d0fed71a9daf0bbfe63441389e0870d19d1fe63d9a",
+        "blockNumber": 10,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380476472
+    },
+    {
+      "id": "BENCH-1793380476177-3",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 103,
+        "rsuVerifyMs": 3,
+        "vehicleSignMs": 1,
+        "backendVerifyMs": 234,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 219,
+        "apiLatencyMs": 337,
+        "totalLatencyMs": 342
+      },
+      "blockchain": {
+        "txHash": "0x9e8f15b9d59da53c5ee0ed829ec8ad2da8ca46a030ddc69ac539d27459edc3d8",
+        "blockNumber": 9,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380476201
+    },
+    {
+      "id": "PERF-1793380476169-619",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 142,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 79,
+        "apiLatencyMs": 221,
+        "totalLatencyMs": 221
+      },
+      "blockchain": {
+        "txHash": "0x9e8f15b9d59da53c5ee0ed829ec8ad2da8ca46a030ddc69ac539d27459edc3d8",
+        "blockNumber": 9,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380476169
+    },
+    {
+      "id": "BENCH-1793380475797-2",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 63,
+        "rsuVerifyMs": 2,
+        "vehicleSignMs": 1,
+        "backendVerifyMs": 200,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 185,
+        "apiLatencyMs": 263,
+        "totalLatencyMs": 266
+      },
+      "blockchain": {
+        "txHash": "0xcf73a7a91e451aa6a352c9a8f7743b14c7a2c423f3ae1dec2a01509281737604",
+        "blockNumber": 8,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380475818
+    },
+    {
+      "id": "PERF-1793380475778-992",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 118,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 58,
+        "apiLatencyMs": 176,
+        "totalLatencyMs": 176
+      },
+      "blockchain": {
+        "txHash": "0xcf73a7a91e451aa6a352c9a8f7743b14c7a2c423f3ae1dec2a01509281737604",
+        "blockNumber": 8,
+        "gasUsed": 48564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380475778
+    },
+    {
+      "id": "BENCH-1793380475503-1",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 96,
+        "rsuVerifyMs": 4,
+        "vehicleSignMs": 3,
+        "backendVerifyMs": 204,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 189,
+        "apiLatencyMs": 300,
+        "totalLatencyMs": 307
+      },
+      "blockchain": {
+        "txHash": "0xd076a6cb5551967081ce016a12da31071847fc5337c91d9af4c3eda9c09eb733",
+        "blockNumber": 7,
+        "gasUsed": 122564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380475525
+    },
+    {
+      "id": "PERF-1793380475496-187",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "V1",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 118,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 73,
+        "apiLatencyMs": 191,
+        "totalLatencyMs": 191
+      },
+      "blockchain": {
+        "txHash": "0xd076a6cb5551967081ce016a12da31071847fc5337c91d9af4c3eda9c09eb733",
+        "blockNumber": 7,
+        "gasUsed": 122564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793380475496
+    },
+    {
+      "id": "PERF-1793378605393-935",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "Vehicle-3",
+      "rsuId": "RSU-02",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 185,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 102,
+        "apiLatencyMs": 287,
+        "totalLatencyMs": 287
+      },
+      "blockchain": {
+        "txHash": "0xf825652c07fcf1f376c67954c73f7bf644160763da89c7ee6b97b36327b2892a",
+        "blockNumber": 16,
+        "gasUsed": 51364,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793378605393
+    },
+    {
+      "id": "PERF-1793378291340-251",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "Vehicle-3",
+      "rsuId": "RSU-5",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 165,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 100,
+        "apiLatencyMs": 265,
+        "totalLatencyMs": 265
+      },
+      "blockchain": {
+        "txHash": "0x5d2a894e5ccf18ed3538ecd883df198ecda03e214f214b139ef0603153172168",
+        "blockNumber": 15,
+        "gasUsed": 51352,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793378291341
+    },
+    {
+      "id": "PERF-1793378165390-344",
+      "operation": "Authentication",
+      "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
+      "vehicleName": "Vehicle-3",
+      "rsuId": "RSU-03",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 126,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 83,
+        "apiLatencyMs": 209,
+        "totalLatencyMs": 209
+      },
+      "blockchain": {
+        "txHash": "0x83fbee76dd5739b91c098b52ddff2e357ba29005914423e2dc9d5ef50f9f524a",
+        "blockNumber": 13,
+        "gasUsed": 105464,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793378165390
+    },
+    {
+      "id": "PERF-1793377618668-966",
+      "operation": "Authentication",
+      "vehicleAddress": "0xcfA7198db9Cc2112ddDAEa584E91D748B42e7Bd4",
+      "vehicleName": "Vehicle-2",
+      "rsuId": "RSU-02",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 156,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 75,
+        "apiLatencyMs": 231,
+        "totalLatencyMs": 231
+      },
+      "blockchain": {
+        "txHash": "0x79d18e7ccf2372363c4fda305acb4f32698c3c14187b8e34c8369bc35b884b35",
+        "blockNumber": 11,
+        "gasUsed": 51364,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793377618668
+    },
+    {
+      "id": "PERF-1793377456379-28",
+      "operation": "Authentication",
+      "vehicleAddress": "0xcfA7198db9Cc2112ddDAEa584E91D748B42e7Bd4",
+      "vehicleName": "Vehicle-2",
+      "rsuId": "RSU-01",
+      "status": "Security Rejection",
+      "outcomeCategory": "Invalid signature",
+      "error": "Signature does not belong to the vehicle",
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 0,
+        "apiLatencyMs": 11,
+        "totalLatencyMs": 0
+      },
+      "blockchain": {
+        "txHash": null,
+        "blockNumber": null,
+        "gasUsed": null,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793377456379
+    },
+    {
+      "id": "PERF-1793376927046-78",
+      "operation": "Handover",
+      "vehicleAddress": "0xcfA7198db9Cc2112ddDAEa584E91D748B42e7Bd4",
+      "vehicleName": "Vehicle-2",
+      "rsuId": "RSU-02",
+      "status": "Success",
+      "outcomeCategory": "Handover successful",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 146,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 85,
+        "apiLatencyMs": 231,
+        "totalLatencyMs": 231
+      },
+      "blockchain": {
+        "txHash": "0x2ad61eadfcba775e350af8e31e4f8fb84b84ac39efcbc1f892505c7e55e2520a",
+        "blockNumber": 10,
+        "gasUsed": 122499,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793376927046
+    },
+    {
+      "id": "PERF-1793376889348-931",
+      "operation": "Authentication",
+      "vehicleAddress": "0xcfA7198db9Cc2112ddDAEa584E91D748B42e7Bd4",
+      "vehicleName": "Vehicle-2",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 159,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 134,
+        "apiLatencyMs": 293,
+        "totalLatencyMs": 293
+      },
+      "blockchain": {
+        "txHash": "0x77a41b813f28e1b6866e10b3e2e19b79992b442fca98375b612359d14c543767",
+        "blockNumber": 9,
+        "gasUsed": 122564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793376889349
+    },
+    {
+      "id": "AUTH-ONCHAIN-29-891",
+      "operation": "Authentication",
+      "vehicleAddress": "0xC8372F7cB77F8fBf2543a6bC642872166E478876",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 14,
+        "rsuVerifyMs": 8,
+        "vehicleSignMs": 18,
+        "backendVerifyMs": 12,
+        "txSubmissionMs": 15,
+        "txConfirmationMs": 42,
+        "apiLatencyMs": 69,
+        "totalLatencyMs": 109
+      },
+      "blockchain": {
+        "txHash": "0xc7d992faea09bd2c6c7de4efc51db12a22c44afd7a6fcbc1b5db32758a69f20a",
+        "blockNumber": 29,
+        "gasUsed": 105464,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368676000
+    },
+    {
+      "id": "REG-ONCHAIN-28-721",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0xC8372F7cB77F8fBf2543a6bC642872166E478876",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0xc48c8efc51bff2684189c0210c2b90d95df2555e92f90c7b976c5eed2faceef7",
+        "blockNumber": 28,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368675000
+    },
+    {
+      "id": "AUTH-ONCHAIN-27-859",
+      "operation": "Authentication",
+      "vehicleAddress": "0x6a8F873b9447F85392e23095ab28dbdce16Fa4BF",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 14,
+        "rsuVerifyMs": 8,
+        "vehicleSignMs": 18,
+        "backendVerifyMs": 12,
+        "txSubmissionMs": 15,
+        "txConfirmationMs": 42,
+        "apiLatencyMs": 69,
+        "totalLatencyMs": 109
+      },
+      "blockchain": {
+        "txHash": "0x337dc40d78488499dca5129c6fe85a3c8732ef7f9bba019332a54a49fb667974",
+        "blockNumber": 27,
+        "gasUsed": 105464,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368667000
+    },
+    {
+      "id": "REG-ONCHAIN-26-709",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0x6a8F873b9447F85392e23095ab28dbdce16Fa4BF",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0xb1e6d345f5f389658ba3bbd622e4674ca6819a29b019db5f1efdfc2bc0499e03",
+        "blockNumber": 26,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368666000
+    },
+    {
+      "id": "AUTH-ONCHAIN-25-872",
+      "operation": "Authentication",
+      "vehicleAddress": "0xebc44B2694Be431dB99eE6F268E3E72DD6379d1f",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 14,
+        "rsuVerifyMs": 8,
+        "vehicleSignMs": 18,
+        "backendVerifyMs": 12,
+        "txSubmissionMs": 15,
+        "txConfirmationMs": 42,
+        "apiLatencyMs": 69,
+        "totalLatencyMs": 109
+      },
+      "blockchain": {
+        "txHash": "0x2b56de6cfde342e1b99cc95e97ebf06071cf0d165c6c9a00fdba6b6778e29bab",
+        "blockNumber": 25,
+        "gasUsed": 105464,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368655000
+    },
+    {
+      "id": "REG-ONCHAIN-24-645",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0xebc44B2694Be431dB99eE6F268E3E72DD6379d1f",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0xf18c53e211b3529f94c4880c4f6c66cd3ec634b4fcc81faaabf26a673e2aab65",
+        "blockNumber": 24,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368654000
+    },
+    {
+      "id": "AUTH-ONCHAIN-23-108",
+      "operation": "Authentication",
+      "vehicleAddress": "0x492aa089233a91eE748A128a8ea90FE04798452b",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 14,
+        "rsuVerifyMs": 8,
+        "vehicleSignMs": 18,
+        "backendVerifyMs": 12,
+        "txSubmissionMs": 15,
+        "txConfirmationMs": 42,
+        "apiLatencyMs": 69,
+        "totalLatencyMs": 109
+      },
+      "blockchain": {
+        "txHash": "0xb0ee5989458970c1fae3488ac84d814fa7f283fbf743fe72ad4efffeb4591b0d",
+        "blockNumber": 23,
+        "gasUsed": 105464,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368648000
+    },
+    {
+      "id": "REG-ONCHAIN-22-184",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0x492aa089233a91eE748A128a8ea90FE04798452b",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0x4b4118096119f42511d057f574576e008dc7382a6df753351b2fddbc8cc08b84",
+        "blockNumber": 22,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793368647000
+    },
+    {
+      "id": "HO-ONCHAIN-19-562",
+      "operation": "Handover",
+      "vehicleAddress": "0x3Cc3cFe3F25500db9f4e2587809d0BA001DcFcbC",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Handover successful",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 19,
+        "backendVerifyMs": 11,
+        "txSubmissionMs": 16,
+        "txConfirmationMs": 45,
+        "apiLatencyMs": 72,
+        "totalLatencyMs": 91
+      },
+      "blockchain": {
+        "txHash": "0x53ffb1757e6f729fedf1a70e0f4b49343b0124a50b13cb175d74e041decf22f0",
+        "blockNumber": 19,
+        "gasUsed": 51287,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793367980000
+    },
+    {
+      "id": "HO-ONCHAIN-18-988",
+      "operation": "Handover",
+      "vehicleAddress": "0x3Cc3cFe3F25500db9f4e2587809d0BA001DcFcbC",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-03",
+      "status": "Success",
+      "outcomeCategory": "Handover successful",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 19,
+        "backendVerifyMs": 11,
+        "txSubmissionMs": 16,
+        "txConfirmationMs": 45,
+        "apiLatencyMs": 72,
+        "totalLatencyMs": 91
+      },
+      "blockchain": {
+        "txHash": "0xc7b00d5bbc2b12961a410d287d2d35b74a0c020bb816a0739227d09edc443f55",
+        "blockNumber": 18,
+        "gasUsed": 51287,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793367960000
+    },
+    {
+      "id": "HO-ONCHAIN-17-551",
+      "operation": "Handover",
+      "vehicleAddress": "0x3Cc3cFe3F25500db9f4e2587809d0BA001DcFcbC",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-02",
+      "status": "Success",
+      "outcomeCategory": "Handover successful",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 19,
+        "backendVerifyMs": 11,
+        "txSubmissionMs": 16,
+        "txConfirmationMs": 45,
+        "apiLatencyMs": 72,
+        "totalLatencyMs": 91
+      },
+      "blockchain": {
+        "txHash": "0x39d2de3d84251a02061e418f1a60fac5fcfefda30a5c2f952e004dbcbc29c23a",
+        "blockNumber": 17,
+        "gasUsed": 105387,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793367931000
+    },
+    {
+      "id": "AUTH-ONCHAIN-16-586",
+      "operation": "Authentication",
+      "vehicleAddress": "0x3Cc3cFe3F25500db9f4e2587809d0BA001DcFcbC",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 14,
+        "rsuVerifyMs": 8,
+        "vehicleSignMs": 18,
+        "backendVerifyMs": 12,
+        "txSubmissionMs": 15,
+        "txConfirmationMs": 42,
+        "apiLatencyMs": 69,
+        "totalLatencyMs": 109
+      },
+      "blockchain": {
+        "txHash": "0x8edaa3c08f78b60fc97ddc2912dac1ebd758f16b773ea3d2a530953c4898d59c",
+        "blockNumber": 16,
+        "gasUsed": 105452,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793367799000
+    },
+    {
+      "id": "REG-ONCHAIN-15-822",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0x3Cc3cFe3F25500db9f4e2587809d0BA001DcFcbC",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0x42ec0c3f93cc001040d747605eebaa9a0c7460f977c0e5c84737fb7e24c095d4",
+        "blockNumber": 15,
+        "gasUsed": 121189,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793367210000
+    },
+    {
+      "id": "REG-ONCHAIN-14-724",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0x3047e2Eb6ed389050a9b6a5a59d79728760f2a4C",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0xb228e8812f62e5b245a9c4c5dac587490b70edaaf83764fedfe41233ed29e6ba",
+        "blockNumber": 14,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793367200000
+    },
+    {
+      "id": "REG-ONCHAIN-13-942",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0xb7bFe340cbA0743f183b3eDf0ae62a81Ff10683d",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0x164b35bc36318886d51a54e15dcdc3aff1f00ddf15c4dcc29ddb98580481e0d5",
+        "blockNumber": 13,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793366915000
+    },
+    {
+      "id": "REG-ONCHAIN-12-802",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0x12B9F9A3FADF9401694A8bdCD29D6a3241f02029",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0xa87df0ac597073001920205dd1d0226a1bf93685580a08031e7590950bcf6f17",
+        "blockNumber": 12,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793366889000
+    },
+    {
+      "id": "REG-ONCHAIN-11-326",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0xee4f8AD98eC8fc9E856e48D946500fBCafcD9129",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0x01e655900175efaf6a1cd8cb8aaedb8778b0d38fe2b1da726e030838b7fb1ab2",
+        "blockNumber": 11,
+        "gasUsed": 121213,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793348630000
+    },
+    {
+      "id": "AUTH-ONCHAIN-9-206",
+      "operation": "Authentication",
+      "vehicleAddress": "0x5383893A749E5128114198104a9aE87a0c967ad2",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-02",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 14,
+        "rsuVerifyMs": 8,
+        "vehicleSignMs": 18,
+        "backendVerifyMs": 12,
+        "txSubmissionMs": 15,
+        "txConfirmationMs": 42,
+        "apiLatencyMs": 69,
+        "totalLatencyMs": 109
+      },
+      "blockchain": {
+        "txHash": "0x3fc9e253cbbef7063969e85cfa4e435878476608403989958632285bf31c90ca",
+        "blockNumber": 9,
+        "gasUsed": 51364,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793347989000
+    },
+    {
+      "id": "HO-ONCHAIN-8-353",
+      "operation": "Handover",
+      "vehicleAddress": "0x5383893A749E5128114198104a9aE87a0c967ad2",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-02",
+      "status": "Success",
+      "outcomeCategory": "Handover successful",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 19,
+        "backendVerifyMs": 11,
+        "txSubmissionMs": 16,
+        "txConfirmationMs": 45,
+        "apiLatencyMs": 72,
+        "totalLatencyMs": 91
+      },
+      "blockchain": {
+        "txHash": "0xb92426089062a8212c9bf99bdcd7a6dba46361e6584b7ce780987140a35c95d5",
+        "blockNumber": 8,
+        "gasUsed": 122499,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793347988000
+    },
+    {
+      "id": "AUTH-ONCHAIN-7-550",
+      "operation": "Authentication",
+      "vehicleAddress": "0x5383893A749E5128114198104a9aE87a0c967ad2",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 14,
+        "rsuVerifyMs": 8,
+        "vehicleSignMs": 18,
+        "backendVerifyMs": 12,
+        "txSubmissionMs": 15,
+        "txConfirmationMs": 42,
+        "apiLatencyMs": 69,
+        "totalLatencyMs": 109
+      },
+      "blockchain": {
+        "txHash": "0x984644eceea85f9c71bef54f5160e073812521814a3a13e04742ddb5d3977686",
+        "blockNumber": 7,
+        "gasUsed": 122564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793347987000
+    },
+    {
+      "id": "REG-ONCHAIN-6-938",
+      "operation": "Vehicle Registration",
+      "vehicleAddress": "0x5383893A749E5128114198104a9aE87a0c967ad2",
+      "vehicleName": "Vehicle-01",
+      "rsuId": "CA",
+      "status": "Success",
+      "outcomeCategory": "Vehicle registered",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 0,
+        "txSubmissionMs": 14,
+        "txConfirmationMs": 38,
+        "apiLatencyMs": 52,
+        "totalLatencyMs": 52
+      },
+      "blockchain": {
+        "txHash": "0x798b59eed2207403cfc1048e22f759b8e841ac3eaba1e798ef50c37d409a3e9f",
+        "blockNumber": 6,
+        "gasUsed": 138313,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793347986000
+    }
+  ]
+}

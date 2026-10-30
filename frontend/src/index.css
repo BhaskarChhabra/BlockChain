@@ -268,9 +268,12 @@ button:disabled {
 ========================================================= */
 
 .main {
-  margin-left: 270px;
-  width: calc(100% - 270px);
-  min-height: 100vh;
+  margin-left: 0 !important;
+  width: 100% !important;
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .topbar {
@@ -336,9 +339,11 @@ button:disabled {
 }
 
 .page-content {
-  padding: 38px 40px 60px;
-  max-width: 1700px;
-  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .page-intro {
@@ -1849,8 +1854,8 @@ input::placeholder {
   }
 
   .main {
-    margin-left: 225px;
-    width: calc(100% - 225px);
+    margin-left: 0;
+    width: 100%;
   }
 
   .stat-grid,
