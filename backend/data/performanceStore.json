@@ -1,6 +1,62 @@
 {
   "records": [
     {
+      "id": "PERF-1793431485233-729",
+      "operation": "Handover",
+      "vehicleAddress": "0xBE4CB84FCe4655690db1C0c2b9aB264D5eF3b2E0",
+      "vehicleName": "Vehicle-2",
+      "rsuId": "RSU-03",
+      "status": "Success",
+      "outcomeCategory": "Handover successful",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 181,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 94,
+        "apiLatencyMs": 275,
+        "totalLatencyMs": 275
+      },
+      "blockchain": {
+        "txHash": "0x5c08fba8e880ad0aef4434c89957ca76c7689ac3b79e6eb6646ee4416c33e76a",
+        "blockNumber": 10,
+        "gasUsed": 122499,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793431485233
+    },
+    {
+      "id": "PERF-1793431392966-224",
+      "operation": "Authentication",
+      "vehicleAddress": "0xBE4CB84FCe4655690db1C0c2b9aB264D5eF3b2E0",
+      "vehicleName": "Vehicle-2",
+      "rsuId": "RSU-01",
+      "status": "Success",
+      "outcomeCategory": "Successful authentication",
+      "error": null,
+      "timings": {
+        "challengeGenMs": 0,
+        "rsuVerifyMs": 0,
+        "vehicleSignMs": 0,
+        "backendVerifyMs": 156,
+        "txSubmissionMs": 0,
+        "txConfirmationMs": 89,
+        "apiLatencyMs": 245,
+        "totalLatencyMs": 245
+      },
+      "blockchain": {
+        "txHash": "0xb21c5c172d006291a519e93606421d2ce16709caf0355da43f3704855968a7c0",
+        "blockNumber": 9,
+        "gasUsed": 122564,
+        "gasPrice": "Local Hardhat (Fixed)",
+        "network": "Hardhat Localnet (31337)"
+      },
+      "timestamp": 1793431392966
+    },
+    {
       "id": "BENCH-1793380476822-5",
       "operation": "Authentication",
       "vehicleAddress": "0x810f324Bf261A4D3Ff594fb650585b1A3FA03Ac9",
